@@ -30,7 +30,8 @@ app.get('/', (req, res) => {
 
 // this responds to a post request for the homepage
 app.post('/', (req, res) => {
-	console.log('post the postmans poster');
+	console.log('post the postmans poster req', req.method)
+	console.log('post the postmans poster res', res.statusCode)
 	res.send('hello POST')
 })
 

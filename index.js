@@ -1,7 +1,11 @@
+// axios post test
+
 // const axios = require('axios')
 
 // axios
-// 	.post('http://localhost:8081/', '')
+// 	.post('http://localhost:8081/', {
+// 		todo: 'buy some milk'
+// 	})
 // 	.then(res => {
 // 		console.log(`statusCode: ${res.status}`)
 // 		console.log(res);
@@ -9,6 +13,10 @@
 // 	.catch(error => {
 // 		console.error(error)
 // 	})
+
+
+
+// default http request
 
 const http = require('http')
 
@@ -41,6 +49,10 @@ req.on('error', error => {
 
 req.write(data)
 
+req.end()
+
+// next test
+
 // const options = {
 // 	hostname: 'localhost',
 // 	port: 8081,
@@ -60,4 +72,6 @@ req.write(data)
 // 	console.error(error)
 // })
 
-req.end()
+// req.end()
+
+// end test 
